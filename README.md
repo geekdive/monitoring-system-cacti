@@ -26,11 +26,11 @@ dhcp-server=192.168.2.1 primary-dns=192.168.2.1 expires-after=23h59m54s
 
 
 ```java
-[admin@MikroTik] /ip address> add address=192.168.10.1/24 interface=ether3 <br>
-[admin@MikroTik] /ip address> print <br>
-**RESULT** <br>                
-**0 D 192.168.2.19/24    192.168.2.0     ether1 **                            
-**1   192.168.10.1/24    192.168.10.0    ether3**
+[admin@MikroTik] /ip address> add address=192.168.10.1/24 interface=ether3
+[admin@MikroTik] /ip address> print
+RESULT  
+0 D 192.168.2.19/24    192.168.2.0     ether1                          
+1   192.168.10.1/24    192.168.10.0    ether3
 ```
 
  
@@ -38,29 +38,29 @@ dhcp-server=192.168.2.1 primary-dns=192.168.2.1 expires-after=23h59m54s
 
 
 ```java
-[admin@MikroTik] > **ip dhcp-server <br>**
-[admin@MikroTik] /ip dhcp-server> **setup <br>**
-Select interface to run DHCP server on <br>
+[admin@MikroTik] > ip dhcp-server
+[admin@MikroTik] /ip dhcp-server> setup
+Select interface to run DHCP server on 
 
-dhcp server interface: **ether3 <br>**
-Select network for DHCP addresses <br>
+dhcp server interface: ether3 
+Select network for DHCP addresses
 
-dhcp address space: **192.168.10.0/24 <br>**
-Select gateway for given network <br>
+dhcp address space: 192.168.10.0/24 
+Select gateway for given network 
 
-gateway for dhcp network: **192.168.10.1 <br>**
-Select pool of ip addresses given out by DHCP server  <br>
+gateway for dhcp network: 192.168.10.1 
+Select pool of ip addresses given out by DHCP server  
 
-addresses to give out: **192.168.10.2-192.168.10.254 <br>**
-Select DNS servers <br>
+addresses to give out: 192.168.10.2-192.168.10.254 
+Select DNS servers 
 
-dns servers: **192.168.2.1 <br>**
-Select lease time <br>
+dns servers: 192.168.2.1 
+Select lease time 
 
-lease time: **10m <br>**
-[admin@MikroTik] /ip dhcp-server> **print <br>**
-**RESULT** <br>
-** 0   dhcp1    ether3                        dhcp_pool1       10m <br>**
+lease time: 10m 
+[admin@MikroTik] /ip dhcp-server> print 
+RESULT
+0   dhcp1    ether3                        dhcp_pool1       10m
 ```
 
 
@@ -68,12 +68,11 @@ lease time: **10m <br>**
 
 
 ```java
-[admin@MikroTik] > **ip firewall nat <br>**
-
-[admin@MikroTik] /ip firewall nat> **add chain=srcnat action=masquerade out-interface=ether1 <br>**
-[admin@MikroTik] /ip firewall nat> **print <br>**
-**RESULT** <br>
-**0    chain=srcnat action=masquerade out-interface=ether1 log=no log-prefix=""**
+[admin@MikroTik] > ip firewall nat
+[admin@MikroTik] /ip firewall nat> add chain=srcnat action=masquerade out-interface=ether1 
+[admin@MikroTik] /ip firewall nat> print 
+RESULT
+0    chain=srcnat action=masquerade out-interface=ether1 log=no log-prefix=""
 ```
 
 
