@@ -25,8 +25,8 @@ dhcp-server=192.168.2.1 primary-dns=192.168.2.1 expires-after=23h59m54s <br>
 [admin@MikroTik] /ip address> add address=192.168.10.1/24 interface=ether3 <br>
 [admin@MikroTik] /ip address> print <br>
 **RESULT** <br>                
- 0 D 192.168.2.19/24    192.168.2.0     ether1 <br>                            
- 1   192.168.10.1/24    192.168.10.0    ether3 <br>
+ 0 D 192.168.2.19/24    192.168.2.0     ether1                             
+ 1   192.168.10.1/24    192.168.10.0    ether3 
  
  > Set DHCP-Server
 
@@ -58,7 +58,7 @@ lease time: 10m <br>
 
 [admin@MikroTik] > ip firewall nat <br>
 
-[admin@MikroTik] /ip firewall nat> add chain=srcnat action=masquerade out-interface=ether1
+[admin@MikroTik] /ip firewall nat> add chain=srcnat action=masquerade out-interface=ether1 <br>
 [admin@MikroTik] /ip firewall nat> print <br>
  0    chain=srcnat action=masquerade out-interface=ether1 log=no log-prefix="" 
 
