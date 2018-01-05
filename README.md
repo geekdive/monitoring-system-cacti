@@ -59,5 +59,5 @@ lease time: **10m <br>**
 [admin@MikroTik] /ip firewall nat> **add chain=srcnat action=masquerade out-interface=ether1 <br>**
 [admin@MikroTik] /ip firewall nat> **print <br>**
 **RESULT** <br>
-** 0    chain=srcnat action=masquerade out-interface=ether1 log=no log-prefix=""** 
+**0    chain=srcnat action=masquerade out-interface=ether1 log=no log-prefix=""**
 
