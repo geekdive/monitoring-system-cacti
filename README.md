@@ -12,13 +12,13 @@ Monitoring System with Cacti
 
 
 ```java
-[admin@MikroTik] > **ip dhcp-client add interface=ether1 disabled=no <br>**
-[admin@MikroTik] > **ip dhcp-client print detail <br>**
-**RESULT** <br>
-**interface=ether1 add-default-route=yes default-route-distance=1 <br>
-use-peer-dns=yes use-peer-ntp=yes dhcp-options=hostname,clientid <br>
-status=bound address=192.168.2.19/24 gateway=192.168.2.1 <br>
-dhcp-server=192.168.2.1 primary-dns=192.168.2.1 expires-after=23h59m54s <br>**
+[admin@MikroTik] > ip dhcp-client add interface=ether1 disabled=no
+[admin@MikroTik] > ip dhcp-client print detail
+RESULT
+interface=ether1 add-default-route=yes default-route-distance=1
+use-peer-dns=yes use-peer-ntp=yes dhcp-options=hostname,clientid
+status=bound address=192.168.2.19/24 gateway=192.168.2.1
+dhcp-server=192.168.2.1 primary-dns=192.168.2.1 expires-after=23h59m54s
 ```
 
 
@@ -26,8 +26,8 @@ dhcp-server=192.168.2.1 primary-dns=192.168.2.1 expires-after=23h59m54s <br>**
 
 
 ```java
-[admin@MikroTik] **/ip address> add address=192.168.10.1/24 interface=ether3 <br>**
-[admin@MikroTik] **/ip address> print <br>**
+[admin@MikroTik] /ip address> add address=192.168.10.1/24 interface=ether3 <br>
+[admin@MikroTik] /ip address> print <br>
 **RESULT** <br>                
 **0 D 192.168.2.19/24    192.168.2.0     ether1 **                            
 **1   192.168.10.1/24    192.168.10.0    ether3**
