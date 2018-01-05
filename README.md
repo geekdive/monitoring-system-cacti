@@ -4,4 +4,4 @@ Monitoring System with Cacti
 
 > Persiapkan Jaringan Seperti Berikut
 
-![](/home/septiyadi/RepositoriGitLocal/monitoring-system-cacti/picture/Screenshot from 2018-01-06 01-27-35.png)
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2001-27-35.png">
