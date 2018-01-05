@@ -12,65 +12,53 @@ Monitoring System with Cacti
 
 /ip dhcp-client add interface=ether1 disabled=no
 
-[admin@MikroTik] > ip dhcp-client add interface=ether1 disabled=no
-[admin@MikroTik] > ip dhcp-client print detail 
-Flags: X - disabled, I - invalid 
- 0   interface=ether1 add-default-route=yes default-route-distance=1 
-     use-peer-dns=yes use-peer-ntp=yes dhcp-options=hostname,clientid 
-     status=bound address=192.168.2.19/24 gateway=192.168.2.1 
-     dhcp-server=192.168.2.1 primary-dns=192.168.2.1 expires-after=23h59m54s 
-[admin@MikroTik] > ping google.com
-  SEQ HOST                                     SIZE TTL TIME  STATUS           
-    0 74.125.130.113                             56  43 18ms 
-    1 74.125.130.113                             56  43 17ms 
-    sent=2 received=2 packet-loss=0% min-rtt=17ms avg-rtt=17ms max-rtt=18ms 
-    
-
+[admin@MikroTik] > ip dhcp-client add interface=ether1 disabled=no <br>
+[admin@MikroTik] > ip dhcp-client print detail <br>
+**RESULT** <br>
+interface=ether1 add-default-route=yes default-route-distance=1 <br>
+use-peer-dns=yes use-peer-ntp=yes dhcp-options=hostname,clientid <br>
+status=bound address=192.168.2.19/24 gateway=192.168.2.1 <br>
+dhcp-server=192.168.2.1 primary-dns=192.168.2.1 expires-after=23h59m54s <br>
 
 > Add IP Address for Ether 3
 
-[admin@MikroTik] /ip address> add address=192.168.10.1/24 interface=ether3
-
-[admin@MikroTik] /ip address> print 
-Flags: X - disabled, I - invalid, D - dynamic 
-    ADDRESS            NETWORK         INTERFACE                              
- 0 D 192.168.2.19/24    192.168.2.0     ether1                                 
- 1   192.168.10.1/24    192.168.10.0    ether3
+[admin@MikroTik] /ip address> add address=192.168.10.1/24 interface=ether3 <br>
+[admin@MikroTik] /ip address> print <br>
+**RESULT** <br>                
+ 0 D 192.168.2.19/24    192.168.2.0     ether1 <br>                            
+ 1   192.168.10.1/24    192.168.10.0    ether3 <br>
  
  > Set DHCP-Server
 
-[admin@MikroTik] > ip dhcp-server 
-[admin@MikroTik] /ip dhcp-server> setup 
-Select interface to run DHCP server on 
+[admin@MikroTik] > ip dhcp-server <br>
+[admin@MikroTik] /ip dhcp-server> setup <br>
+Select interface to run DHCP server on <br>
 
-dhcp server interface: ether3
-Select network for DHCP addresses 
+dhcp server interface: ether3 <br>
+Select network for DHCP addresses <br>
 
-dhcp address space: 192.168.10.0/24
-Select gateway for given network 
+dhcp address space: 192.168.10.0/24 <br>
+Select gateway for given network <br>
 
-gateway for dhcp network: 192.168.10.1
-Select pool of ip addresses given out by DHCP server 
+gateway for dhcp network: 192.168.10.1 <br>
+Select pool of ip addresses given out by DHCP server  <br>
 
-addresses to give out: 192.168.10.2-192.168.10.254
-Select DNS servers 
+addresses to give out: 192.168.10.2-192.168.10.254 <br>
+Select DNS servers <br>
 
-dns servers: 192.168.2.1
-Select lease time 
+dns servers: 192.168.2.1 <br>
+Select lease time <br>
 
-lease time: 10m
-[admin@MikroTik] /ip dhcp-server> print 
-Flags: X - disabled, I - invalid 
-    NAME     INTERFACE     RELAY           ADDRESS-POOL     LEASE-TIME ADD-ARP
- 0   dhcp1    ether3                        dhcp_pool1       10m
+lease time: 10m <br>
+[admin@MikroTik] /ip dhcp-server> print <br>
+**RESULT** <br>
+ 0   dhcp1    ether3                        dhcp_pool1       10m <br>
 
 > Set Firewall NAT
 
-[admin@MikroTik] > ip firewall nat 
-[admin@MikroTik] /ip firewall nat> add chain=srcnat action=masquerade out-interface=Public
-input does not match any value of interface
+[admin@MikroTik] > ip firewall nat <br>
+
 [admin@MikroTik] /ip firewall nat> add chain=srcnat action=masquerade out-interface=ether1
-[admin@MikroTik] /ip firewall nat> print 
-Flags: X - disabled, I - invalid, D - dynamic 
+[admin@MikroTik] /ip firewall nat> print <br>
  0    chain=srcnat action=masquerade out-interface=ether1 log=no log-prefix="" 
 
