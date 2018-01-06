@@ -96,14 +96,6 @@ https://wiki.mikrotik.com/wiki/Manual:IP/Firewall/NAT
 ipserver: 192.168.10.21
 access: ssh -l pangerankesiangan 192.168.10.30
 
-> Install Web Server
-
-Lihat link berikut: 
-
-```java
-https://github.com/latehero/u-need-a-webserver-for-develop
-```
-
 > Cacti di Server Monitoring
 
 Cacti adalah tool network monitoring system (NMS) opensource dan berbasis web yang dirancang sebagai aplikasi front-end dari RRDTool yang berfungsi untuk menyimpan informasi kedalam database MySQL kemudian menampilkannya kedalam bentuk grafik
@@ -114,5 +106,43 @@ Cacti menggunakan protocol SNMP (Simple Network Management Protocol) untuk menga
 
 Sebelumnya kita harus menginstall LAMP (Linux Apache2, MySQL dan PHP) pada sistem server yang akan kita jadikan server monitoringnya disini kita akan gunakan Ubuntu Server 16.04 LTS
 
+> Persyaratan Installasi
+
+Untuk menginstall NMS Cacti, ada beberapa package yang harus diinstall terlebih dahulu agar cacti NM dapat berfungsi dengan baik, diantaranya adalah sebagai berikut:
+
+* LAMP Server
+* SNMP, SNMPD dan RRDTool
+
+> Install Web Server
+
+Lihat link berikut: 
+
+```java
+https://github.com/latehero/u-need-a-webserver-for-develop
+```
+
+> Installasi SNMP, SNMPD dan RRDTool
 
 
+```java
+root@server:/home/pahlawankesiangan# apt-get install snmp snmpd rrdtool
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  fontconfig libcairo2 libdatrie1 libdbi1 libgraphite2-3 libharfbuzz0b
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpixman-1-0 librrd4
+  libsensors4 libsnmp-base libsnmp30 libthai-data libthai0 libxcb-render0
+  libxcb-shm0 libxrender1
+Suggested packages:
+  lm-sensors snmp-mibs-downloader librrds-perl snmptrapd
+The following NEW packages will be installed:
+  fontconfig libcairo2 libdatrie1 libdbi1 libgraphite2-3 libharfbuzz0b
+  libpango-1.0-0 libpangocairo-1.0-0 libpangoft2-1.0-0 libpixman-1-0 librrd4
+  libsensors4 libsnmp-base libsnmp30 libthai-data libthai0 libxcb-render0
+  libxcb-shm0 libxrender1 rrdtool snmp snmpd
+0 upgraded, 22 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3419 kB of archives.
+After this operation, 11.9 MB of additional disk space will be used.
+Do you want to continue? [Y/n]
+```
