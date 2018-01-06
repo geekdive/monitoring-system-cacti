@@ -88,3 +88,5 @@ https://wiki.mikrotik.com/wiki/Manual:IP/Firewall/NAT
 
 <img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2006-54-28.png">
 
+
+> Persiapkan Server
