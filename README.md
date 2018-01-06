@@ -175,7 +175,7 @@ Ketika proses installasi cacti akan ada beberapa pertanyaan untuk memilih web se
 
 selanjutnya akan diminta memasukkan password mysql pas ketika nginstall MySQL Servernya, seperti dibawah
 
-<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2013-37-37.png>
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2013-37-37.png">
 
 lalu kemudian konfirmasi password
 
