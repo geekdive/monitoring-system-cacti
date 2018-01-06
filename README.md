@@ -189,5 +189,36 @@ Tunggu hingga proses installasi selesai seperti dibawah ini
 
 <img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2013-47-33.png">
 
+> Restarting Service SNMP and See the Status
 
+sebelum mengkonfigurasi SNMPD alangkah lebih baiknya kita restart terlebih dahulu SNMPD servicenya seperti berikut:
+
+
+```java
+root@server:/home/pahlawankesiangan# sudo /etc/init.d/snmpd restart
+[ ok ] Restarting snmpd (via systemctl): snmpd.service.
+root@server:/home/pahlawankesiangan# sudo /etc/init.d/snmpd status
+● snmpd.service - LSB: SNMP agents
+   Loaded: loaded (/etc/init.d/snmpd; bad; vendor preset: enabled)
+   Active: active (running) since Sat 2018-01-06 13:51:50 WIB; 4s ago
+     Docs: man:systemd-sysv-generator(8)
+  Process: 22444 ExecStop=/etc/init.d/snmpd stop (code=exited, status=0/SUCCESS)
+  Process: 22453 ExecStart=/etc/init.d/snmpd start (code=exited, status=0/SUCCESS)
+    Tasks: 1
+   Memory: 4.5M
+      CPU: 20ms
+   CGroup: /system.slice/snmpd.service
+           └─22470 /usr/sbin/snmpd -Lsd -Lf /dev/null -u snmp -g snmp -I -smu...
+
+Jan 06 13:51:50 server systemd[1]: Stopped LSB: SNMP agents.
+Jan 06 13:51:50 server systemd[1]: Starting LSB: SNMP agents...
+Jan 06 13:51:50 server snmpd[22453]:  * Starting SNMP services:
+Jan 06 13:51:50 server snmpd[22461]: /etc/snmp/snmpd.conf: line 145: Warnin...s.
+Jan 06 13:51:50 server snmpd[22461]: /etc/snmp/snmpd.conf: line 147: Warnin...s.
+Jan 06 13:51:50 server snmpd[22461]: Turning on AgentX master support.
+Jan 06 13:51:50 server systemd[1]: Started LSB: SNMP agents.
+Jan 06 13:51:50 server snmpd[22470]: NET-SNMP version 5.7.3
+Hint: Some lines were ellipsized, use -l to show in full.
+root@server:/home/pahlawankesiangan# 
+```
 
