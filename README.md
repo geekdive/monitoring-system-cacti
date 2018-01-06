@@ -252,9 +252,21 @@ berikut adalah tampilan awalnya
 
 <img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2014-07-34.png">
 
+> Setup Pooler Spine pada Cacti
+
+```java
+Spine adalah poller alternatif untuk cacti, secara default akan menggunakan cmd.php sebagai pollernya.
+```
+
+baik cmd.php maupun spine adalah sama sama poller yang bisa digunakan pada NMS Cacti, yang membedakan keduanya adalah dengan spine proses polling data menjadi lebih cepat, poller spine ini ditulis dengan bahasa C dan ditautkan langsung kedalam library net-snmp, sehingga dengan begitu akan meminimalkan waktu proses polling data pada cacti.
+
+untuk mensetup adalah sebaga berikut, klik menu Settings > pilih tab Poller, kemudian > pada opsi Poller Type pilih Spine, lalu klik tombol Save untuk Menyimpannya.
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2014-21-30.png">
 
 
-
+**Note:**
+Proses installasi dan konfigurasi cacti pada Ubuntu Server 16.04 LTS sudah selesai., selanjutnya kita akan membahas bagaimana cara memonitor sebuah host pada cacti dan juga menambahkan template host pada cacti.
 
 
 
