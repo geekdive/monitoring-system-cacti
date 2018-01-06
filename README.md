@@ -75,8 +75,7 @@ RESULT
 0    chain=srcnat action=masquerade out-interface=ether1 log=no log-prefix=""
 ```
 
-sumber: <br>
-
+sumber:
 ```java
 https://wiki.mikrotik.com/wiki/Manual:IP/DHCP_Client
 https://wiki.mikrotik.com/wiki/Manual:IP/Address
