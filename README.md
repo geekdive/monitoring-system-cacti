@@ -75,6 +75,15 @@ RESULT
 0    chain=srcnat action=masquerade out-interface=ether1 log=no log-prefix=""
 ```
 
+sumber: <br>
+
+```java
+https://wiki.mikrotik.com/wiki/Manual:IP/DHCP_Client
+https://wiki.mikrotik.com/wiki/Manual:IP/Address
+https://wiki.mikrotik.com/wiki/Manual:IP/DHCP_Server
+https://wiki.mikrotik.com/wiki/Manual:IP/Firewall/NAT
+```
+
 
 > Saya Asumsikan ada Client komputer di bawah switch
 
