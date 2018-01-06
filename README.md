@@ -146,3 +146,27 @@ Need to get 3419 kB of archives.
 After this operation, 11.9 MB of additional disk space will be used.
 Do you want to continue? [Y/n]
 ```
+
+> Install Cacti Spine
+
+```java
+root@server:/home/pahlawankesiangan# apt-get install cacti cacti-spine
+Reading package lists... Done
+Building dependency tree       
+Reading state information... Done
+The following additional packages will be installed:
+  libjs-jquery-cookie libjs-jquery-ui libjs-jquery-ui-theme-ui-lightness
+  libmysqlclient20 libphp-adodb php-mysql php-snmp php7.0-snmp
+Suggested packages:
+  php-ldap moreutils snmp-mibs-downloader libjs-jquery-ui-docs php-adodb
+The following NEW packages will be installed:
+  cacti cacti-spine libjs-jquery-cookie libjs-jquery-ui
+  libjs-jquery-ui-theme-ui-lightness libmysqlclient20 libphp-adodb php-mysql
+  php-snmp php7.0-snmp
+0 upgraded, 10 newly installed, 0 to remove and 0 not upgraded.
+Need to get 3506 kB of archives.
+After this operation, 14.4 MB of additional disk space will be used.
+Do you want to continue? [Y/n]
+```
+
+
