@@ -222,3 +222,37 @@ Hint: Some lines were ellipsized, use -l to show in full.
 root@server:/home/pahlawankesiangan# 
 ```
 
+> Configuring Cacti NMS Server
+
+Selanjutnya adalah mengkonfigurasi Cacti NMS Server, sebelumnya akses http://ip_address/cacti dan akan muncul seperti gambar di bawah ini:
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2013-53-47.png">
+
+selanjutnya pada button Next klik kemudian akan muncul step selanjutnya, 
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2013-56-53.png">
+
+secara default installasi tipe akan diarahkan ke opsi New Install, dikarenakan kali ini kita ingin menginstall Cacti NMS, maka Installation Type pilih New Install, klik tombol Next untuk melanjutkan ke tahap selanjutnya.
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2013-59-41.png">
+
+setelah itu klik tombol Finish. kemudian akan diarahkan ke halaman login 
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2014-01-25.png">
+
+masukan default username dan password admin/admin, setelah itu akan muncul halaman login lagi seperti dibawah ini kita diharuskan untuk merubah password yang baru dan pastikan password tidak lupa disini saya setting <br>
+username: admin
+password: 453p714d1
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2014-03-58.png">
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2014-04-24.png">
+
+berikut adalah tampilan awalnya
+
+
+
+
+
+
+
