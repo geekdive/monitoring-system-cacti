@@ -250,6 +250,10 @@ password: 453p714d1
 
 berikut adalah tampilan awalnya
 
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2014-07-34.png">
+
+
+
 
 
 
