@@ -169,4 +169,25 @@ After this operation, 14.4 MB of additional disk space will be used.
 Do you want to continue? [Y/n]
 ```
 
+Ketika proses installasi cacti akan ada beberapa pertanyaan untuk memilih web server yang diguanakan seperti gambar dibawah ini:
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2013-36-24.png">
+
+selanjutnya akan diminta memasukkan password mysql pas ketika nginstall MySQL Servernya, seperti dibawah
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2013-37-37.png>
+
+lalu kemudian konfirmasi password
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2013-40-17.png">
+
+lalu kemudian pilih web server
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2013-44-50.png">
+
+Tunggu hingga proses installasi selesai seperti dibawah ini
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2013-47-33.png">
+
+
 
