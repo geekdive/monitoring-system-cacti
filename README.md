@@ -106,7 +106,6 @@ https://github.com/latehero/u-need-a-webserver-for-develop
 
 > Cacti di Server Monitoring
 
-```java
 Cacti adalah tool network monitoring system (NMS) opensource dan berbasis web yang dirancang sebagai aplikasi front-end dari RRDTool yang berfungsi untuk menyimpan informasi kedalam database MySQL kemudian menampilkannya kedalam bentuk grafik
 
 Dengan cacti, kita bisa memonitoring semua resource pada perangkat jaringan baik itu server, router, switch maupun perangkat network lainnya. Umumnya cacti digunakan untuk me-monitoring CPU load, Memory Usage dan juga penggunaan bandwidth yang ada pada jaringan.
@@ -114,7 +113,6 @@ Dengan cacti, kita bisa memonitoring semua resource pada perangkat jaringan baik
 Cacti menggunakan protocol SNMP (Simple Network Management Protocol) untuk mengambil dan mengumpulkan informasi tersebut kemudian menyimpannya kedalam database MySQL, setelah itu semua informasi yang sudah dikumpulkan akan ditampilkan pada web browser menggunakan bahasa pemrograman PHP.
 
 Sebelumnya kita harus menginstall LAMP (Linux Apache2, MySQL dan PHP) pada sistem server yang akan kita jadikan server monitoringnya disini kita akan gunakan Ubuntu Server 16.04 LTS
-```
 
 
 
