@@ -76,3 +76,7 @@ RESULT
 ```
 
 
+> Saya Asumsikan ada Client komputer di bawah switch
+
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2006-54-28.png">
+
