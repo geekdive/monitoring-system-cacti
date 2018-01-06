@@ -91,4 +91,4 @@ https://wiki.mikrotik.com/wiki/Manual:IP/Firewall/NAT
 
 > Persiapkan Server Monitoring 
 
-<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2011-56-45.png>
+<img src="https://github.com/latehero/monitoring-system-cacti/blob/master/picture/Screenshot%20from%202018-01-06%2011-56-45.png">
